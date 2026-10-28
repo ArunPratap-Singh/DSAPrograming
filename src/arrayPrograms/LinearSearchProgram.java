@@ -2,22 +2,23 @@ package arrayPrograms;
 
 import java.util.Scanner;
 
-public class LinearSearch {
+public class LinearSearchProgram {
 	
-	public static void main(String [] args) {
+	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
 		int [] a = {34, 12, 50, 44, 28, 40, 33};
+		
 		int key = Integer.parseInt(sc.nextLine());
 		
 		int index = linearSearch(a, key);
 		
-		if(index >= 0) {
+		if(index >=0) {
 			
 			System.out.println("Element is found at index: " +index);
 		}else {
-			System.out.println("Element int NOT Found");
+			System.out.println("Element is NOT found");
 		}
 		
 		sc.close();
@@ -32,10 +33,8 @@ public class LinearSearch {
 				return i;
 			}
 		}
+		
 		return -1;
 	}
-	
 
 }
-
-	
