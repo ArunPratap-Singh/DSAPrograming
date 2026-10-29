@@ -9,6 +9,8 @@ public class BinarySearchProgram {
 		Scanner sc = new Scanner(System.in);
 		
 		int [] a = {12, 20, 30, 34, 44, 50, 60};
+		
+		System.out.println("Enter element to search: ");
 		int key = Integer.parseInt(sc.nextLine());
 		
 		int index = binarySearch(a, key);

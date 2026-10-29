@@ -10,6 +10,7 @@ public class LinearSearchProgram {
 		
 		int [] a = {34, 12, 50, 44, 28, 40, 33};
 		
+		System.out.println("Enter element to search: ");
 		int key = Integer.parseInt(sc.nextLine());
 		
 		int index = linearSearch(a, key);
